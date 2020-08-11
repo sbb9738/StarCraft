@@ -4,7 +4,7 @@ class Medic extends Unit implements Boardable,Healable {
 
     Medic()
     {
-     super(40);   //메딕의 max hp 값
+     super(50);   //메딕의 max hp 값 50수정
     }
 
 public void move_sound() {
