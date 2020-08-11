@@ -4,28 +4,28 @@ class Medic extends Unit implements Boardable,Healable {
 
     Medic()
     {
-     super(50);   //¸ÞµñÀÇ max hp °ª 50¼öÁ¤
+     super(50);   //ë©”ë”•ì˜ max hp ê°’ 50ìˆ˜ì •
     }
 
 public void move_sound() {
- System.out.println("¸Þµñ°£´Ù.");
+ System.out.println("ë©”ë”•ê°„ë‹¤.");
 
 }
 
 public void attack_sound() {
- System.out.println("¸Þµñ°ø°ÝÇÑ´Ù.");
+ System.out.println("ë©”ë”•ê³µê²©í•œë‹¤.");
 
 }
 
-   public void heal(Healable r)  //Healable À» implementsÇÑ À¯´Öµé ¾Æ¹«°Å³ª ¹ÞÀ»¼öÀÖ´Ù.
+   public void heal(Healable r)  //Healable ì„ implementsí•œ ìœ ë‹›ë“¤ ì•„ë¬´ê±°ë‚˜ ë°›ì„ìˆ˜ìžˆë‹¤.
    {
-    Unit u =(Unit)r;     //Unit ·Î ÂüÁ¶º¯¼ö ¼±¾ðÇß±â¶§¹®¿¡ r À» unit ÇüÀ¸·Î Çüº¯È¯ÇØÁØ´Ù.
-    while(u.hitPoint !=u.MAX_HP)   //max hp °¡ µÉ¶§±îÁö
+    Unit u =(Unit)r;     //Unit ë¡œ ì°¸ì¡°ë³€ìˆ˜ ì„ ì–¸í–ˆê¸°ë•Œë¬¸ì— r ì„ unit í˜•ìœ¼ë¡œ í˜•ë³€í™˜í•´ì¤€ë‹¤.
+    while(u.hitPoint !=u.MAX_HP)   //max hp ê°€ ë ë•Œê¹Œì§€
     {
-     u.hitPoint++;    //hitpoint¸¦ Áõ°¡½ÃÅ²´Ù.
-   System.out.println("Ä¡·áÁß..:>"+u.hitPoint);
+     u.hitPoint++;    //hitpointë¥¼ ì¦ê°€ì‹œí‚¨ë‹¤.
+   System.out.println("ì¹˜ë£Œì¤‘..:>"+u.hitPoint);
     }
-    System.out.println("Ä¡·á¿Ï·á");
+    System.out.println("ì¹˜ë£Œì™„ë£Œ");
    }
 }
 
